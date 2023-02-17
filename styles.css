@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:576px) {
+    .logo img{
+        display: none;
+    }
+    .logo h1{
+        font-size: 25px;
+        cursor: pointer;
+    }      
+}
+@media screen and (max-width:768px) {
+    #logo_img{
+        width: 10%;
+        height: 10%;
+    }
+    .logo h1{
+        font-size: 25px;
+        cursor: pointer;
+    }     
+}
+@media screen and (max-width:992px) {
+    .nav-item a:hover{
+        color: darkgray;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    .navbar-nav{
+        margin: auto;
+    }
+    .me-2{
+        display: none;
+    }
+    #searchBtn{
+        display: none;
+    }        
+}
+@media screen and (min-width:992px) {
+    /* Hover Effect */
+.nav-item a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: #49111c;
+    transition: .6s;
+}
+.nav-item a::after{
+    left: 0;
+    bottom: -10px;
+}
+.nav-item a:hover::after{
+    width: 100%;
+}    
+}
+
+/* Footer */
+.sticky-footer{
+    background-color: #FCEDDA;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Index Page */
+/* Nav Bar */
+
+.logo{
+    display: flex;
+    flex-direction: row; 
+    text-align: center; 
+    cursor: pointer;  
+}
+.logo a{
+    text-decoration: none;
+    text-align: center;
+}
+.logo a:hover{
+    color: darkgray;
+}
+.logo h1{
+    font-size: 20px;
+    letter-spacing: 3px;    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #49111c;
+}
+#logo_img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 25%;
+    background-color: #49111c;
+}
+.nav-link{
+    color: #49111c;
+    letter-spacing: 2px;    
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 15px; 
+    position: relative;
+    padding: 0 20px;
+    cursor: pointer;   
+}
+
+.navbar-collapse{  /* align items at the centre*/
+    margin: auto;
+    margin-inline-end: 0;    
+}
+.navbar-nav{
+    margin: auto;
+}
+#searchBtn{
+    color: #49111c;
+    border-color: #FCEDDA;
+    border-radius: 50%;
+    left: 0px;
+}
+.me-2{
+    border-radius: 60px;
+    margin-right: 0 !important;
+    transition: all 0.3s;
+}
+.me-2:hover{
+    transform: scale(1.1);
+}
+.navbar-toggler{
+    color: #FCEDDA;
+    border-style: hidden;
+    transition: all 0.4s;
+}
+.navbar-toggler:hover{
+    transform: scale(1.2);
+}
+/* Welcome */
+#welcome{
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Products */
+.card-img-top{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+/* Side-Bar */
+#sidebartitle{
+    color: white;
+    text-align: center;    
+    align-items: center;
+    
+}
+.nav-items-title{
+    background-color: #49111c;
+    width: 100%; 
+}
+.nav-links{
+    text-decoration: none;    
+    color: white;
+    letter-spacing: 2px;   
+}
+
+/* Profile Page */
+.sidebar-list{
+    padding: 0;
+    margin-top: 5px;
+    list-style-type: none; 
+    font-weight: 900;
+    color: #A2A2A1FF;   
+}
+.sidebar-list-item{
+    padding: 20px 20px 20px 20px;
+}
+.sidebar-list-item:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);    
+}
+.sidebar-list a{
+    text-decoration: none;
+    color: #A2A2A1FF;  
+}
+/* Admin Dashboard */
+.grid-container{
+    display: grid;
+    grid-template-columns: 260px 1fr 1fr 1fr;  /* Number of columns and sizes */
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+     "sidebar header header header"
+     "sidebar main main main" ;
+    height: 100vh;
+}
+.header{
+    grid-area: header;
+    height: 70px;
+    background-color: #49111c;
+}
+#sidebar{
+    grid-area: sidebar;
+    height: 100%;
+    background-color: aqua;
+}
+.main-container{
+    grid-area: main;
+    background-color: white;
+}
+
+/* Checkout */
+.payment-icons {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
